@@ -1,9 +1,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.imbryk.viewPager"
-    android:versionCode="1"
-    android:versionName="1.0" >
+          package="com.imbryk.viewPager"
+          android:versionCode="1"
+          android:versionName="1.0">
 
     <uses-sdk
-        android:minSdkVersion="4" />
-
+            android:minSdkVersion="19" android:targetSdkVersion="19"/>
+    <application
+            android:allowBackup="false"
+            android:icon="@drawable/logo"
+            android:label="loop">
+        <activity android:name=".sample.SampleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
 </manifest>
