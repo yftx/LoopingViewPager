@@ -49,8 +49,6 @@ public class SampleActivity extends Activity {
     }
 
     public void onClickEvent0(View v) {
-//        resetDatas(0);
-//        adapter.notifyDataSetChanged();
         resetDatas(0);
         adapter = new SamplePagerAdapter();
         mVP.setAdapter(adapter);
@@ -58,12 +56,14 @@ public class SampleActivity extends Activity {
 
     public void onClickEvent1(View v) {
         resetDatas(1);
-        adapter.notifyDataSetChanged();
+        adapter = new SamplePagerAdapter();
+        mVP.setAdapter(adapter);
     }
 
     public void onClickEvent2(View v) {
         resetDatas(2);
-        adapter.notifyDataSetChanged();
+        adapter = new SamplePagerAdapter();
+        mVP.setAdapter(adapter);
     }
 
     public void onClickEvent3(View v) {
